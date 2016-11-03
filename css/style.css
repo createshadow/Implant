@@ -1,0 +1,772 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    ;
+}
+
+body {
+    font-family: "OpenSans";
+    color: #959595;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.implant-btn {
+  width: 120px;
+  height: 35px;
+  background-color: white;
+  border: 2.07px solid #6dcff6;
+  border-radius: 20px;
+}
+
+.implant-btn:focus {
+  outline: none;
+}
+
+.logo-title {
+  font-size: 31px;
+  font-weight: 300;
+  color: #3d3d47;
+}
+
+/* HEADER */
+
+@media screen and (min-width: 960px) {
+  .logo-row {
+    border-bottom: 1px solid #e5e5e5;
+    height: 70px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .logo {
+    position: absolute;
+    top: 15%;
+    left: 30%;
+  }
+
+  .logo-title {
+    position: absolute;
+    top: 25%;
+    left: 37%;
+  }
+
+  .logo-call {
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    text-align: justify;
+  }
+
+  .logo-form {
+    position: absolute;
+    top: 25%;
+    left: 40%;
+    border: 1.49px solid #43ddd5;
+    border-radius: 19px;
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+
+  .logo-form>input {
+    border: none;
+    width: 130px;
+  }
+
+  .logo-form>input:focus {
+    outline: none;
+  }
+
+  .logo-form>button {
+    border: none;
+    background-color: transparent;
+  }
+
+  .logo-form>button {
+    outline: none;
+  }
+
+  .navigation-row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .navigation {
+
+    height: 50px;
+    display: inline-block;
+    margin-left: 13%;
+    line-height: 50px;
+  }
+
+  .navigation>a {
+    color: #373f50;
+    text-decoration: none;
+    text-align: justify;
+    padding: 17px;
+    width: 600px;
+  }
+
+  .navigation>:first-child {
+    padding-left: none;
+  }
+
+  .navigation>a:hover {
+    color: #07a7e3;
+    border-top: 1px solid #29b3e6;
+  }
+  /* /HEADER */
+
+  /*
+  SLIDER
+  */
+    .slider-form {
+      width: 447px;
+      height: 369px;
+      background-color: rgba(255, 255, 255, 0.3);
+      border-radius: 10px;
+      position: absolute;
+      /*top: -645%;*/
+      top: -315px;
+      left: 59%;
+      padding-top: 20px;
+      text-align: center;
+    }
+
+    .slider-form>h3 {
+      color: white;
+      font-size: 26px;
+      font-weight: 700;
+      padding-bottom: 10px;
+    }
+
+    .slider-form>input {
+      width: 382px;
+      height: 47px;
+      border: 1.49px solid white;
+      color: white;
+      border-radius: 20px;
+      padding-left: 25px;
+      margin-bottom: 35px;
+      background-color: transparent;
+    }
+
+      .slider-form>::-webkit-input-placeholder  {
+        color: white;
+      }
+
+      .slider-form>::-webkit-input-placeholder:focus  {
+        color: transparent;
+      }
+
+    .slider-form>input:focus {
+      outline: none;
+    }
+
+    .slider-form>button {
+      width: 252px;
+      height: 47px;
+      border: none;
+      background-color: white;
+      border-radius: 20px;
+      color: #13afd5;
+      font-size: 19px;
+      font-weight: 400;
+      line-height: 16px;
+    }
+
+    .slider-form>button:focus {
+      outline: none;
+    }
+
+
+  /*
+  /SLIDER
+  */
+
+  /*
+    MAIN
+  */
+    .implant-row {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .implant {
+      left: 43%;
+    }
+
+    .implant-text {
+      left: 36%;
+      padding: 20px 0;
+    }
+
+    .implant-text>span {
+      color: #373f50;
+      font-size: 26px;
+      font-weight: 400;
+    }
+
+    .list-item-img {
+      background: url('../img/implant-img.png') no-repeat;
+      background-size: cover;
+      width: 470px;
+      height: 477px;
+      margin-left: 50px;
+    }
+
+    .list-item {
+      width: 550px;
+      height: 477px;
+      border-top: 0.53px solid #acacac;
+      border-right: 0.53px solid #acacac;
+      border-bottom: 0.53px solid #acacac;
+      padding-left: 30px;
+      padding-top: 10px;
+    }
+
+    .list-numbered {
+      list-style: none;
+      margin-left: 1em;
+      counter-reset: line;
+}
+
+    .list-numbered > li {
+        position: relative;
+        margin-bottom: 1.5em;
+        color: #959595;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 23px;
+}
+
+    .list-numbered > li:before {
+      	position: absolute;
+      	left: -2.25em;
+      	display: inline-block;
+        width: 22px;
+      	height: 22px;
+      	margin-right: 0.5em;
+        margin-top: 0.7em;
+        background-color: white;
+      	border-radius: 50%;
+      	color: #00bff3;
+        border: 1.49px solid #00bff3;
+      	text-align:center;
+        line-height: 1.5em;
+      	counter-increment: line;
+      	content: counter(line);
+}
+
+    .implantation-steps {
+      margin-top: 5%;
+      margin-bottom: 5%;
+    }
+
+    .implantation-steps-1 {
+      display: block;
+      top: 20px;
+      left: 7%;
+    }
+
+    .implantation-steps-2 {
+      top: 40px;
+        left: 70px;
+    }
+
+    .implantation-steps-3 {
+      top: 50px;
+      left: 60px;
+    }
+
+    .implantation-steps-4 {
+      top: 40px;
+  left: 100px;
+    }
+
+    .implantation-steps-num {
+      position: absolute;
+      width: 61px;
+      height: 61px;
+      background-color: #31c5ff;
+      border-radius: 50%;
+      top: -25px;
+      left: -45px;
+      color: white;
+      font-size: 55px;
+      font-weight: 700;
+      line-height: 61px;
+      text-align: center;
+    }
+
+    .implantation-steps-num-2 {
+      position: absolute;
+      width: 61px;
+      height: 61px;
+      background-color: #31c5ff;
+      border-radius: 50%;
+      top: -45px;
+      left: -40px;
+      color: white;
+      font-size: 55px;
+      font-weight: 700;
+      line-height: 61px;
+      text-align: center;
+    }
+
+    .implantation-steps-num-3 {
+      position: absolute;
+      width: 61px;
+      height: 61px;
+      background-color: #31c5ff;
+      border-radius: 50%;
+      top: -55px;
+      left: -45px;
+      color: white;
+      font-size: 55px;
+      font-weight: 700;
+      line-height: 61px;
+      text-align: center;
+    }
+
+    .implantation-steps-num-4 {
+      position: absolute;
+      width: 61px;
+      height: 61px;
+      background-color: #31c5ff;
+      border-radius: 50%;
+      top: -50px;
+      left: -40px;
+      color: white;
+      font-size: 55px;
+      font-weight: 700;
+      line-height: 61px;
+      text-align: center;
+    }
+
+    .implantation-steps-discription-1 {
+      display: block;
+      text-align: center;
+      padding-top: 20px;
+      padding-right: 140px;
+      color: #12b1db;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 21px;
+    }
+
+    .implantation-steps-discription-2 {
+      display: block;
+      text-align: center;
+      padding-top: 20px;
+      padding-right: 150px;
+      /*white-space: nowrap;*/
+      color: #12b1db;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 21px;
+    }
+
+    .implantation-steps-discription-3 {
+      display: block;
+      text-align: center;
+      padding-top: 20px;
+      padding-right: 100px;
+      color: #12b1db;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 21px;
+    }
+
+    .implantation-steps-discription-4 {
+      display: block;
+      text-align: center;
+      padding-top: 20px;
+      padding-right: 160px;
+      color: #12b1db;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 21px;
+    }
+
+
+
+    /*.implantation-list {
+      display: block;
+      margin-left: 10%;
+      margin-top: 2%;
+      list-style: none;
+      margin-left: 1em;
+      counter-reset: line;
+    }
+
+    .implantation-list>li {
+      display: inline-flex;
+      width: 220px;
+      position: relative;
+      margin-bottom: 1.5em;
+      color: #959595;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 23px;
+      margin-right: 53px;
+    }
+
+    .implantation-list > li:before {
+        position: absolute;
+        left: -2.25em;
+        display: inline-block;
+        width: 22px;
+        height: 22px;
+        margin-right: 0.5em;
+        background-color: white;
+        border-radius: 50%;
+        color: #00bff3;
+        border: 1.49px solid #00bff3;
+        text-align:center;
+        line-height: 1.25em;
+        counter-increment: line;
+        content: counter(line);
+}
+
+    .implantation-list>li>span {
+      color: #12b1db;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 21px;
+      display: inline-block;
+    }*/
+
+    .first-implant-block {
+      background: url('../img/nobel-biocar.png') no-repeat;
+      background-position: center;
+      width: 320px;
+      height: 320px;
+      border: 3.22px solid #32d8c5;
+      border-radius: 50%;
+      margin-left: 5px;
+    }
+
+    .second-implant-block {
+      background: url('../img/bicon.png') no-repeat;
+      background-position: center;
+      width: 320px;
+      height: 320px;
+      border: 3.22px solid #32d8c5;
+      border-radius: 50%;
+      margin-left: 5px;
+    }
+
+    .third-implant-block {
+          background: url('../img/plus.png') no-repeat;
+          opacity: 0.86;
+          background-color: lime;
+          background-image: -webkit-linear-gradient(bottom, #31d5be 0%, #08a4dd 100%);
+          background-image: -o-linear-gradient(bottom, #31d5be 0%, #08a4dd 100%);
+          background-image: linear-gradient(to top, #31d5be 0%, #08a4dd 100%);
+          width: 320px;
+          height: 320px;
+          border: 3.22px solid #32d8c5;
+          border-radius: 50%;
+          text-align: center;
+          line-height: 320px;
+          margin-left: 5px;
+        }
+
+        .implant-text-align {
+          text-align: center;
+          margin-left: 125px;
+        }
+
+        .implant-block-border {
+          margin: 10px;
+          width: 330px;
+          height: 630px;
+          border: 0.53px solid #acacac;
+          padding: 20px 0 0 0;
+        }
+
+        .implant-block-border>h3 {
+          color: #12b1db;
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 21px;
+        }
+
+        .implant-block-border>span {
+          color: #959595;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 21px;
+        }
+
+        .implant-block-border>button {
+          display: block;
+          position: absolute;
+          top: 80%;
+          left: 30%;
+        }
+
+        .implant-choice {
+          border: 0.53px solid #acacac;
+          width: 700px;
+          height: 350px;
+          left: 8%;
+          line-height: 350px;
+          margin-left: 10%;
+          margin-top: 4%;
+        }
+
+        .implant-choice-li {
+          padding-top: 48px;
+          padding-left: 60px;
+          list-style: none;
+          margin-left: 1em;
+          counter-reset: line;
+        }
+
+        .implant-choice-li>li {
+          position: relative;
+          margin-bottom: 1.5em;
+          color: #959595;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 23px;
+        }
+
+        .implant-choice-li > li:before {
+            position: absolute;
+            left: -2.25em;
+            display: inline-block;
+            width: 22px;
+            height: 22px;
+            margin-right: 0.5em;
+            margin-top: 0.05em;
+            background-color: white;
+            border-radius: 50%;
+            color: #00bff3;
+            border: 1.49px solid #00bff3;
+            text-align:center;
+            line-height: 1.5em;
+            counter-increment: line;
+            content: counter(line);
+    }
+
+        .btn-choice {
+          margin-left: 100px;
+        }
+
+        .main-feedback-form {
+          background: url('../img/slider-bg.png') no-repeat;
+          background-size: cover;
+          width: 100%;
+          height: 572px;
+          display: flex;
+        }
+
+  /*
+    /MAIN
+  */
+
+  /*
+      FOOTER
+  */
+
+    .feedback-img {
+      position: absolute;
+      top: 14%;
+      left: 5%;
+    }
+
+  .feedback-form {
+    width: 447px;
+    height: 369px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    position: absolute;
+    top: 17%;
+    left: 109%;
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  .feedback-form>h3 {
+    color: white;
+    font-size: 26px;
+    font-weight: 700;
+    padding-bottom: 10px;
+  }
+
+  .feedback-form>input {
+    width: 382px;
+    height: 47px;
+    border: 1.49px solid white;
+    color: white;
+    border-radius: 20px;
+    padding-left: 25px;
+    margin-bottom: 35px;
+    background-color: transparent;
+  }
+
+    .feedback-form>::-webkit-input-placeholder  {
+      color: white;
+    }
+
+    .feedback-form>::-webkit-input-placeholder:focus  {
+      color: transparent;
+    }
+
+  .feedback-form>input:focus {
+    outline: none;
+  }
+
+  .feedback-form>button {
+    width: 252px;
+    height: 47px;
+    border: none;
+    background-color: white;
+    border-radius: 20px;
+    color: #13afd5;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 16px;
+  }
+
+  .feedback-form>button:focus {
+    outline: none;
+  }
+
+  .biography>h3 {
+    color: #09a7dd;
+    font-size: 30px;
+    padding-top: 25px;
+  }
+
+  .biography>p {
+    color: black;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 26px;
+  }
+
+  .biography>span {
+    color: #959595;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    padding-bottom: 30px;
+  }
+
+  progress[value] {
+  	appearance: none;
+  	border: none;
+  	width: 356px; height: 6px;
+  	background-color: whiteSmoke;
+  	border-radius: 3px;
+  	box-shadow: 0 2px 3px rgba(0,0,0,.5) inset;
+  	color: royalblue;
+  	position: relative;
+  	margin: 0 0 1.5em;
+  }
+
+  progress[value]::-webkit-progress-bar {
+  	background-color: whiteSmoke;
+  	border-radius: 3px;
+  	box-shadow: 0 2px 3px rgba(0,0,0,.5) inset;
+  }
+
+  progress[value]::-webkit-progress-value {
+  	position: relative;
+  	background-size: 35px 20px, 100% 100%, 100% 100%;
+  	border-radius:3px;
+    animation: animate-stripes 5s linear infinite;
+  }
+  @keyframes animate-stripes { 100% { background-position: -100px 0; } }
+
+  progress[value]::-webkit-progress-value:after {
+  	content: '';
+  	position: absolute;
+  	width:5px; height:5px;
+  	top:7px; right:7px;
+  	background-color: white;
+  	border-radius: 100%;
+  }
+
+  .progress-bar {
+  	background-color: whiteSmoke;
+  	border-radius: 3px;
+  	box-shadow: 0 2px 3px rgba(0,0,0,.5) inset;
+  	width: 50%;
+    height:6px;
+  }
+
+  .biography>.progress-bar>span {
+  	background-color: royalblue;
+  	border-radius: 3px;
+  	display: block;
+  	text-indent: -9999px;
+    color: #535353;
+font-family: OpenSans;
+font-size: 14px;
+font-weight: 300;
+line-height: 13px;
+  }
+
+  p[data-value] {
+
+    position: relative;
+  }
+
+  p[data-value]:after {
+  	content: attr(data-value) '%';
+  	position: absolute; right:0;
+  }
+
+  .orthodontics::-webkit-progress-value  {
+    background-color: #37d6c0;
+}
+
+.implants::-webkit-progress-value  {
+  background-color: #37bed3;
+}
+
+.cosmetic-work::-webkit-progress-value  {
+  background-color: #07a7e3;
+}
+
+.biography>.progress-discript {
+  color: #535353;
+  font-family: OpenSans;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 13px;
+}
+
+  .footer-blue-line {
+    background-color: #28c7cd;
+    width: 100%;
+    height: 20px;
+  }
+
+  .footer-block {
+    width: 100%;
+    height: 150px;
+    background-color: #444f5d;
+    border: 0.53px solid #a1a1a1;
+    text-align: center;
+  }
+
+  .footer-block>span {
+    color: #dbdbdb;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 150px;
+  }
+  /*
+     /FOOTER
+  */
+}
